@@ -9,7 +9,7 @@ class Home extends CI_Controller {
 		
 		// moving data from controller to view
 
-		$data['heading'] = "CI Home Page";
+		$data['heading'] = "Sports Basahin";
 
 		$this->load->view('includes/header');
 		$this->load->view('home_view', $data);
