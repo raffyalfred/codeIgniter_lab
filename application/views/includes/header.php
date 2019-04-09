@@ -86,7 +86,7 @@
             Articles
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="<?php echo base_url()?>article">Articles Main</a>
+            
             <a class="dropdown-item" href="<?php echo base_url()?>article/read">Read</a>
             <!-- <div class="dropdown-divider"></div> -->
             <a class="dropdown-item" href="<?php echo base_url()?>article/write">Write</a>

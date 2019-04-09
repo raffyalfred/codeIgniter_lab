@@ -1,5 +1,11 @@
+<div class="container mt-5">
+<div class="col">
+    <div class="row d-flex justify-content-center">
+    <h1>Articles</h1>
+    </div>
+</div>
 
-<h1>Crud Read</h1>
+</div>
 
 <?php if($results): ?>
 <?php foreach($results as $row): ?>

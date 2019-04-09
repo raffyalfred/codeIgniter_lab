@@ -1,12 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-<h1>Create New Letter</h1>
+<h1>Create New Article</h1>
 
 <?php echo form_open_multipart('article/write') ?>
 
     <div class="form-group">
-        <label for="letter">Letter</label>
+        <label for="letter">Article</label>
         <input type="text" name="letter" class="form-control" value="<?php echo set_value('letter') ?>">
         <?php echo form_error('letter') ?>
     </div>

@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-<h1>Crud Main Page</h1>
+
+<a class="dropdown-item" href="<?php echo base_url()?>article/read">Read</a>
 
