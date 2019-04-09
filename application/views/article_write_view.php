@@ -16,6 +16,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <textarea name="description" class="form-control" id="" cols="30" rows="10"><?php echo set_value('description'); ?></textarea>
         <?php echo form_error('description') ?>
     </div>
+    <div class="form-group">
+        <input type="file" name="img">
+    </div>
 
     <div class="form-group">
         <input type="submit" class="btn">

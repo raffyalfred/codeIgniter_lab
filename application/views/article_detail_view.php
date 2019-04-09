@@ -1,11 +1,9 @@
 
-<h1>Read Article</h1>
-
 <?php if($results): ?>
 <?php foreach($results as $row): ?>
 
-    <h3><?php echo $row->letter; ?></h3>
-    <div class="alert alert-info">by <b><?php echo $row->username; ?></b></div>
+    <h3 class="mt-5 mb-3"><?php echo $row->letter; ?></h3>
+    <div class="alert alert-info mb-5">by <b><?php echo $row->username; ?></b></div>
     <div style="margin-bottom: 1rem;"><?php echo $row->description; ?></div>
 
     <?php if ($this->tank_auth->get_user_id() === $row->author_id) :?>

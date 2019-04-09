@@ -189,6 +189,32 @@ class Article extends CI_Controller {
 		redirect('article/index', 'location');
 	}
 
+	public function image_resize() {
+
+		$this->load->library('image_lib');
+
+		$config['image_library'] = 'gd2';
+		$config['source_image'] = 'pictures/court-small.jpg';
+		$config['create_thumb'] = TRUE;
+		$config['maintain_ratio'] = TRUE;
+		$config['width']         = 75;
+		$config['height']       = 50;
+
+		$this->image_lib->clear();
+		$this->load->library('image_lib', $config);
+
+		$this->image_lib->resize();
+
+	}
+
+	public function calendar(){
+
+		$this->load->model('Mycal_model');
+		$data['calender'] = $this->Mycal_model->getcalender($year , $month);
+		$this->load->view('calview', $data);
+
+	}
+
 	
 
 

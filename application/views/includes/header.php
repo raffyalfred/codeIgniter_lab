@@ -90,7 +90,7 @@
             <a class="dropdown-item" href="<?php echo base_url()?>article/read">Read</a>
             <!-- <div class="dropdown-divider"></div> -->
             <a class="dropdown-item" href="<?php echo base_url()?>article/write">Write</a>
-            <a class="dropdown-item" href="<?php echo base_url()?>article/update">Update</a>
+            
           </div>
         </li>
 
