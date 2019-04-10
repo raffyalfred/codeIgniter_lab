@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <?php echo form_error('description') ?>
     </div>
     <div class="form-group">
-        <input type="file" name="img">
+        <input type="file" name="editImage">
     </div>
 
     <div class="form-group">

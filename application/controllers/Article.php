@@ -50,6 +50,7 @@ class Article extends CI_Controller {
 			// get the info from the form; put that into the array to pass to the model
 			$data['letter'] = $this->input->post('letter');
 			$data['description'] = $this->input->post('description');
+			$data['editImage'] = $this->input->post('editImage');
 
 			// testing to see what is in the array
 			// echo "<pre>";
