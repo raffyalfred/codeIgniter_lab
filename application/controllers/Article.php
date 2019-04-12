@@ -50,7 +50,7 @@ class Article extends CI_Controller {
 			// get the info from the form; put that into the array to pass to the model
 			$data['letter'] = $this->input->post('letter');
 			$data['description'] = $this->input->post('description');
-			$data['editImage'] = $this->input->post('editImage');
+			// $data['editImage'] = $this->input->post('editImage');
 
 			// testing to see what is in the array
 			// echo "<pre>";
@@ -194,7 +194,7 @@ class Article extends CI_Controller {
 
 		$this->load->library('image_lib');
 
-		$config['image_library'] = 'gd2';
+		$config['image_library'] = 'gd2'; 
 		$config['source_image'] = 'pictures/court-small.jpg';
 		$config['create_thumb'] = TRUE;
 		$config['maintain_ratio'] = TRUE;
